@@ -1,0 +1,29 @@
+From ppt 000 - Browsers Internals-Getting started
+
+1)Difference between HTTP1.1 vs 2
+https://www.youtube.com/watch?v=SmE4OwHztCc
+2)List 5 difference between Browser JS(console) v Nodejs
+3)JSONserver – fake server with POST
+https://www.youtube.com/watch?v=-4r0W7TtVTY
+4)Host JSON server in Heroku –
+ https://github.com/reach2arunprakash/json-server-heroku
+
+From ppt 000a - HTML Basics
+
+Task 1: All tags in HTML Cheatsheet in your html with explanations  
+Task 2: Create your Resume
+
+from ppt 001 - DataTypes
+
+1)Use typeof in all the datatypes and check the result
+
+typeof(1)
+typeof(1.1)
+typeof("1.1")
+typeof(true)
+typeof(null)
+typeof(undefined)
+typeof([])
+typeof({})
+
+2)Write a blog about objects and its internal representation in Javascript

@@ -1,0 +1,43 @@
+**********************
+**HTTP/1.1 vs HTTP/2**
+**------------------**
+**********************
+
+
+
+What is HTTP ?
+--------------
+
+HTTP stands for HyperText Transfer protocol, this forms the basis for almost all web applications. In general, HTTP is the method computers and servers send and receive data.
+
+The first usable version of HTTP was created in 1997. after going through several stages of development, this first version of HTTP was called HTTP/1.1. This version is still in use on the web. In 2015, a new version of HTTP called HTTP/2 was created.
+
+
+Why HTTP/2 suddenly ?
+---------------------
+
+Well it is not sudden, HTTP/2 solves several problems that the creators of HTTP/1.1 did not anticipate. In particular, HTTP/2 is much faster and more efficient than HTTP/1.1. One of the ways in which HTTP/2 is faster is in how it prioritizes content during the loading process.
+
+
+What is content prioritization ?
+--------------------------------
+In the context of web performance, prioritization refers to the order in which pieces of content are loaded. Prioritization affects a webpage's load time. 
+Suppose if there is a big JS file linked, while browser is fetching the JS which will slow the page-rendering. such  resources are reffered as render-blocking resources.
+
+With the help of prioritization these render blocking resources can be loaded last or after rendering the page, so that the user does not feel the Lag.
+
+Prioritization in HTTP/2 
+------------------------
+
+HTTP/2 offers an unique feature called weighted prioritization. This allows developers to decide which page resources will load first. In HTTP/2, when a client makes a request for a webpage, the server sends several streams of data to the client at once, instead of sending one thing after another. This method of data delivery is known as multiplexing. Developers can assign each of these data streams a different weighted value, and the value tells the client which data stream to render first.
+
+Differences between HTTP/1.1 and HTTP/2
+---------------------------------------
+
+HTTP/1.1 loads resources sequentially, resources can turn into render blocking resources quickly due to many reasons. Where as HTTP/2 sends multiple streams of data using a single TCP connection at once so that the issue of render blocking is reloved. HTTP/2 does this by splitting data into binary-code messages and numbers them so that the client knows which stream each binary message belongs to.
+
+Only after client's request, the server responds, but for mordern web apps, which often involve several dozen separate resources that the client must request. HTTP/2 solves this problem by allowing a server to "push" content to a client before the client asks for it. The server also sends a message letting the client know what pushed content to expect
+
+Small files load more quickly than large ones. To speed up web performance, both HTTP/1.1 and HTTP/2 compress HTTP messages to make them smaller. However, HTTP/2 uses a more advanced compression method called HPACK that eliminates redundant information in HTTP header packets. This eliminates a few bytes from every HTTP packet. Given the volume of HTTP packets involved in loading even a single webpage, those bytes add up quickly, resulting in faster loading.
+
+

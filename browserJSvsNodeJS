@@ -1,0 +1,11 @@
+BrowserJS vs NodeJS
+-------------------
+BrowserJS renders and acts at the front end of a Web Application, whereas NodeJS build and acts at the Server side of the web application
+
+BrowserJS as it is described runs on the browser, it cannot run independent of browser, but NodeJS runs and can control the whole system environment
+
+BrowserJS interacts with the DOM, or other Web Platform APIs. Those do not exist in Node, we don’t have the document, window and all the other objects that are provided by the browser.
+
+BrowserJS cannot access the local file system, where as NodeJS can access file system
+
+Another difference is that Node uses the CommonJS module system, while in the browser we are starting to see the ES Modules standard being implemented.
